@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    background-color:  hsl(300, 50%, 40%);
+    padding: 16px, 0;
+    color: white;
+    display: flex; /*Alinhou os itens lado a lado*/
+    border-bottom: 10px solid hsl(300, 50%, 40%);
+    justify-content: center; /*Alinhou o header no centro*/
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header button{
+    margin-left: 16px; /*Espaço entre os itens*/
+}
+
+form {
+    background-color: #bbb0b0;
+    padding: 24px, 0;
+    text-align: center; /*Alinhou texto no centro*/
+    display: none; /*Elementos fica oculto*/
+}
+
+form h2 {
+    margin-bottom: 10px; /*Espaoçamento interno da parte de baixo*/
+}
+
+input, button {
+    padding: 8px;
+}
+
+button {
+    background-color:#008000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold; /*Negrito*/
+    text-transform: uppercase; /*Aplicou letra maiuscula*/
+    color: white;
+}
+
+#cancel-button{
+    background-color: red;
+}
+
+ul {
+    display: flex; /*Elementos um ao lado do outro*/
+    flex-wrap: wrap; /*Quando chegar ao limite cria uma nova linha*/
+}
+
+ul li {
+    max-width: 25%; /*Largura maxima dos itens*/
+    list-style: none; /*Remover o pontinho da lista*/
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden; /*Ocultou parte do conteúdo*/ 
+}
+
+ul li img {
+    width: 100%;
+}
+
+.overlay-img-link {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0; /*Removeu a opacidade*/
+    transition: all case .05; /*Não está funcionando*/
+
+}
+
+.overlay-img-link a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-img-link {
+    opacity: 1; /*Quando o mouse toque retorna a opacidade*/
+}
+
+
+
