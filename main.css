@@ -61,9 +61,11 @@ ul li {
     overflow-y: hidden; /*Ocultou parte do conteúdo*/ 
 }
 
-ul li img {
+img{
     width: 100%;
+    height: 100%;
 }
+
 
 .overlay-img-link {
     padding: 16px;
@@ -85,6 +87,3 @@ ul li img {
 ul li:hover .overlay-img-link {
     opacity: 1; /*Quando o mouse toque retorna a opacidade*/
 }
-
-
-
