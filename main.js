@@ -3,13 +3,13 @@ $(document).ready(function () {
         $('form').slideDown();
     })
 
-    $('cancel-button').click(function(){
+    $('#cancel-button').click(function(){
         $('form').slideUp();
     })
 
     $('form').on('submit', function(e) {
       e.preventDefault(); 
-      const  newImageAddress = $('endereco-img-nova').val();
+      const  newImageAddress = $('#endereco-img-nova').val();
       const newItem = $('<li></li>');
       $(`<img src= "${newImageAddress}"/>`).appendTo(newItem);
       $(`
